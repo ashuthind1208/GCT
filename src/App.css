@@ -1,38 +1,319 @@
-.App {
-  text-align: center;
+@import url("https://fonts.googleapis.com/css2?family=Julius+Sans+One&family=Poppins:wght@200;300;400&family=Ubuntu:wght@300&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+body {
+  font-family: Julius Sans One;
+  /* margin: 0 auto;
+  padding: 0; */
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  flex-direction: column;
+  background-color: rgba(245, 204, 0, 0.3);
 }
 
-.App-link {
-  color: #61dafb;
+.headerContainer {
+  width: 1400px;
+  display: flex;
+  justify-content: space-between;
+  /* margin-top: 10px;
+  */
+}
+.heroBanner {
+  display: flex;
+  flex-direction: column;
+  background-image: url("../public/truck.jpg");
+  background-repeat: no-repeat;
+  background-size: 110% 100%;
+  opacity: 1;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.heroBannerText {
+  color: #f5cc00;
+  display: flex;
+  flex-direction: column;
+  padding: 400px 20px 60px 30px;
+  flex: auto;
+}
+
+.bannerTextTitle {
+  font-size: 30px;
+  letter-spacing: 2px;
+  padding-bottom: 30px;
+}
+
+.bannerTextSubTitle {
+  padding-top: 10px;
+  font-size: 15px;
+  letter-spacing: 2px;
+}
+
+.bannerCTA {
+  margin-top: 50px;
+}
+
+.navDriveUs1 {
+  background-color: #cca000;
+  color: #000814;
+  padding: 10px 30px;
+  border-radius: 10px;
+  font-weight: bold;
+  width: 200px;
+}
+
+.logo {
+  display: flex;
+  flex-direction: column;
+  padding: 60px 20px 20px 30px;
+  color: #f5cc00;
+}
+
+.logoAbbr {
+  font-size: 40px;
+  font-weight: bold;
+}
+
+.logoFullName {
+  font-size: 15px;
+  padding-left: 2px;
+  padding-top: 10px;
+  letter-spacing: 2px;
+  font-weight: bold;
+}
+
+#navigationContainer ul {
+  display: flex;
+  list-style: none;
+  margin-top: 60px;
+  margin-right: 30px;
+  color: #f5cc00;
+  letter-spacing: 2px;
+  font-weight: bold;
+}
+
+#navigationContainer ul li {
+  padding-top: 10px;
+  margin-right: 40px;
+}
+
+.navDriveUs {
+  background-color: #cca000;
+  color: #000814;
+  padding: 10px 30px;
+  border-radius: 10px;
+  font-weight: bold;
+}
+
+.mainContainer {
+  width: 1400px;
+  background-color: #000814;
+  color: #f5cc00;
+  min-height: 50vh;
+}
+
+.truckByNumContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex: 1;
+  padding: 110px 0 100px 30px;
+}
+
+.truckByNumContent {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.contentTitle {
+  font-size: 35px;
+  letter-spacing: 2px;
+}
+
+.contentSubTitle {
+  padding-top: 25px;
+  font-size: 18px;
+  letter-spacing: 2px;
+  max-width: 80%;
+  line-height: 35px;
+}
+
+.truckingNumbers {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-content: space-around;
+  align-items: center;
+  margin-right: 130px;
+}
+
+.truckData {
+  padding: 60px;
+  border-right: solid 2px #cca000;
+  border-bottom: solid 2px #cca000;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+}
+
+.truckDataContentTitle {
+  font-size: 30px;
+  letter-spacing: 2px;
+}
+
+.truckDataContentSubTitle {
+  font-size: 15px;
+  letter-spacing: 2px;
+  max-width: 70%;
+  line-height: 25px;
+}
+
+.shippingNeedsContainer {
+  background-color: rgb(0, 29, 61, 0.4);
+  display: flex;
+  justify-content: space-between;
+  padding: 80px 0 0px 30px;
+}
+
+.shippingType {
+  display: flex;
+  flex-direction: column;
+}
+
+.shippingTypeContentSubTitle {
+  padding-top: 0px;
+  font-size: 18px;
+  letter-spacing: 2px;
+  max-width: 80%;
+  line-height: 35px;
+}
+
+.shippingDataContentSubTitle {
+  font-size: 13px;
+  letter-spacing: 2px;
+  max-width: 70%;
+  line-height: 25px;
+  padding-top: 20px;
+}
+
+.shippingDataContentSubTitle ul {
+  padding-left: 20px;
+  padding-top: 10px;
+}
+
+.shippingImg {
+  padding: 0px 40px 20px 40px;
+}
+
+.shipWithUs {
+  background-color: rgb(0, 29, 61, 0.4);
+  color: #f5cc00;
+  border: solid 2px #f5cc00;
+  padding: 10px 30px;
+  border-radius: 0px;
+  font-weight: bold;
+  margin-top: 30px;
+}
+
+.startedByContainer {
+  display: flex;
+  padding: 80px 0 30px 30px;
+}
+
+.startedByImg {
+  margin: 0px 0 30px 0px;
+}
+
+.startedByContent {
+  display: flex;
+  flex-direction: column;
+  margin-left: 80px;
+}
+
+.startedByTitle {
+  font-size: 22px;
+  letter-spacing: 2px;
+  margin-bottom: 60px;
+}
+
+.startedBySubTitle {
+  font-size: 15px;
+  letter-spacing: 2px;
+  line-height: 35px;
+  margin-bottom: 40px;
+  margin-right: 30px;
+}
+
+.footerContainer {
+  background-color: #f5cc00;
+  color: #000814;
+  display: flex;
+  justify-content: space-between;
+  padding: 80px 0 0px 30px;
+}
+
+.footerLogoSection {
+  display: flex;
+  flex-direction: column;
+}
+
+.footerAddress {
+  padding-top: 30px;
+  line-height: 20px;
+}
+
+.socialMedia {
+  padding-top: 20px;
+}
+
+.socialMedia img {
+  padding-right: 10px;
+}
+
+.footerLinksSection {
+  display: flex;
+  flex-direction: column;
+}
+
+.footerLink {
+  margin-top: 10px;
+  margin-bottom: 5px;
+  line-height: 25px;
+}
+
+.footerSubscribeSection {
+  display: flex;
+  flex-direction: column;
+  margin-right: 100px;
+}
+
+.subscribeText {
+  padding: 8px;
+  border-radius: 5px;
+  outline: none;
+  font-family: Julius Sans One;
+  width: 100%;
+  margin-top: 20px;
+}
+
+.subscribeButton {
+  background-color: rgb(0, 29, 61);
+  color: #f5cc00;
+  border: solid 2px #f5cc00;
+  padding: 10px 30px;
+  border-radius: 0px;
+  font-weight: bold;
+  margin-top: 10px;
+  font-family: Julius Sans One;
+}
+
+.copyright {
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+  font-size: 12px;
 }
