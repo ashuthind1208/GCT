@@ -110,6 +110,23 @@ body {
   font-weight: bold;
 }
 
+@media only screen and (max-width: 400px) {
+  .logoAbbr {
+    font-size: 70px;
+    font-weight: bold;
+    margin-left: 840px;
+  }
+
+  .logoFullName {
+    font-size: 35px;
+    padding-left: 2px;
+    padding-top: 10px;
+    letter-spacing: 2px;
+    font-weight: bold;
+    margin-left: 700px;
+  }
+}
+
 #navigationContainer ul {
   display: flex;
   list-style: none;
