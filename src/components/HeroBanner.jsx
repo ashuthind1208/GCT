@@ -16,7 +16,7 @@ const HeroBanner = () => {
         Excellence.
       </span>
       <div className="bannerCTA">
-        <span className="navDriveUs1">Drive with us</span>
+        <span className="navBannerDriveUs">Drive with us</span>
       </div>
     </div>
   );

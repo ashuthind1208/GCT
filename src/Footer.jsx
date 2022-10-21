@@ -5,8 +5,8 @@ const Footer = () => {
     <>
       <div className="footerContainer">
         <div className="footerLogoSection">
-          <span className="logoAbbr">GCT</span>
-          <span className="logoFullName">GoldCoast Trucking</span>
+          <span className="footerLogoAbbr">GCT</span>
+          <span className="footerLogoFullName">GoldCoast Trucking</span>
           <span className="footerAddress">
             2720 E Valley Hwy E, Sumner
             <br />
