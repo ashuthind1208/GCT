@@ -38,6 +38,7 @@ const Footer = () => {
           <span className="footerLink">
             For regular updates from Cheema Freightlines
             <br />
+            <br />
             and job opportunities, leave us your email address.
           </span>
           <div>

@@ -8,22 +8,24 @@
 
 body {
   font-family: Julius Sans One;
-  /* margin: 0 auto;
-  padding: 0; */
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  background-color: rgba(245, 204, 0, 0.3);
+  /* background-color: rgba(245, 204, 0, 0.3); */
+  background-color: rgb(0, 29, 61, 0.3);
+}
+
+.App {
+  width: 1400px;
 }
 
 .headerContainer {
-  width: 1400px;
+  width: 100%;
   display: flex;
   justify-content: space-between;
-  /* margin-top: 10px;
-  */
 }
+
 .heroBanner {
   display: flex;
   flex-direction: column;
@@ -31,6 +33,18 @@ body {
   background-repeat: no-repeat;
   background-size: 110% 100%;
   opacity: 1;
+}
+
+@media only screen and (max-width: 400px) {
+  .heroBanner {
+    display: flex;
+    flex-direction: column;
+    background-image: url("../public/truck.jpg");
+    background-repeat: no-repeat;
+
+    background-size: cover;
+    opacity: 1;
+  }
 }
 
 .heroBannerText {
@@ -45,6 +59,16 @@ body {
   font-size: 30px;
   letter-spacing: 2px;
   padding-bottom: 30px;
+}
+
+@media only screen and (max-width: 400px) {
+  .bannerTextTitle {
+    font-size: 20px;
+    text-align: center;
+    letter-spacing: 2px;
+    padding-bottom: 30px;
+    padding-left: 130px;
+  }
 }
 
 .bannerTextSubTitle {
@@ -96,6 +120,18 @@ body {
   font-weight: bold;
 }
 
+@media only screen and (max-width: 400px) {
+  #navigationContainer ul {
+    display: none;
+    /* list-style: none;
+    margin-top: 60px;
+    margin-right: 30px;
+    color: #f5cc00;
+    letter-spacing: 2px;
+    font-weight: bold; */
+  }
+}
+
 #navigationContainer ul li {
   padding-top: 10px;
   margin-right: 40px;
@@ -110,7 +146,7 @@ body {
 }
 
 .mainContainer {
-  width: 1400px;
+  width: 100%;
   background-color: #000814;
   color: #f5cc00;
   min-height: 50vh;
@@ -249,7 +285,7 @@ body {
 }
 
 .footerContainer {
-  background-color: #f5cc00;
+  background-color: #cca000;
   color: #000814;
   display: flex;
   justify-content: space-between;
@@ -268,6 +304,7 @@ body {
 
 .socialMedia {
   padding-top: 20px;
+  margin-bottom: 30px;
 }
 
 .socialMedia img {
@@ -281,8 +318,8 @@ body {
 
 .footerLink {
   margin-top: 10px;
-  margin-bottom: 5px;
-  line-height: 25px;
+  margin-bottom: 15px;
+  line-height: 15px;
 }
 
 .footerSubscribeSection {
