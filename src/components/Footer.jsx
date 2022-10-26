@@ -6,19 +6,27 @@ const Footer = () => {
       <div className="footerContainer">
         <div className="footerLogoSection">
           <span className="footerLogoAbbr">GCT</span>
-          <span className="footerLogoFullName">GoldCoast Trucking</span>
+          <span className="footerLogoFullName">Gold Coast Trucking</span>
           <span className="footerAddress">
-            2720 E Valley Hwy E, Sumner
+            1435 West Valley Hwy N
             <br />
-            Washington 98390, United States
+            Auburn WA, United States, 98001
           </span>
-          <span className="footerAddress">(253) 733-5718</span>
-          <span className="footerAddress">team@gct.com</span>
+          <span className="footerAddress">(253) 733-5718 / (253) 249-7563</span>
+          <span className="footerAddress">24 hour dispatch- 206-981-0849</span>
+
+          <a
+            className="footerAddress"
+            href="mailto:'contact@goldcoastrucking.com"
+          >
+            contact@goldcoastrucking.com
+          </a>
+
           <div className="socialMedia">
-            <img src="/logo-facebook.svg" width={40} />
-            <img src="/logo-instagram.svg" width={40} />
-            <img src="/logo-linkedin.svg" width={40} />
-            <img src="/logo-youtube.svg" width={40} />
+            <img alt="social" src="/logo-facebook.svg" width={40} />
+            <img alt="social" src="/logo-instagram.svg" width={40} />
+            <img alt="social" src="/logo-linkedin.svg" width={40} />
+            <img alt="social" src="/logo-youtube.svg" width={40} />
           </div>
         </div>
         <div className="footerLinksSection">

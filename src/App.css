@@ -13,7 +13,21 @@ body {
   justify-content: center;
   flex-direction: column;
   /* background-color: rgba(245, 204, 0, 0.3); */
-  background-color: rgb(0, 29, 61, 0.3);
+  background-color: rgb(204, 160, 0, 0.2);
+  margin: 0 auto;
+  overflow-x: hidden !important;
+}
+
+hr {
+  color: #000814;
+
+  opacity: 0.5;
+}
+
+@media only screen and (max-width: 500px) {
+  body {
+    zoom: 100%;
+  }
 }
 
 .App {
@@ -29,6 +43,7 @@ body {
 .heroBanner {
   display: flex;
   flex-direction: column;
+
   background-image: url("../public/truck.jpg");
   background-repeat: no-repeat;
   background-size: 110% 100%;
@@ -39,12 +54,12 @@ body {
   .heroBanner {
     display: flex;
     flex-direction: column;
-    background-image: url("../public/truck.jpg");
+    /* background-image: url("../public/truck.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     height: 100%;
     width: 100%;
-    opacity: 1;
+    opacity: 1; */
   }
 }
 
@@ -130,18 +145,41 @@ body {
     font-weight: bold;
     width: 200px;
     margin-left: 300px;
-    margin-bottom: 50px;
   }
+}
+.test {
+  display: flex;
+  justify-content: space-between;
 }
 
 .logo {
   display: flex;
   flex-direction: column;
   padding: 60px 20px 20px 30px;
-  color: #f5cc00;
+}
+
+.logo a {
+  color: #cca000;
+  text-decoration: none;
+}
+
+.logoInside {
+  display: flex;
+  flex-direction: column;
+  padding: 60px 20px 20px 30px;
+}
+
+.logoInside a {
+  color: #000814;
+  text-decoration: none;
 }
 
 .logoAbbr {
+  font-size: 40px;
+  font-weight: bold;
+}
+
+.logoAbbrInside {
   font-size: 40px;
   font-weight: bold;
 }
@@ -152,6 +190,16 @@ body {
   padding-top: 10px;
   letter-spacing: 2px;
   font-weight: bold;
+  color: #cca000;
+}
+
+.logoFullNameInside {
+  font-size: 15px;
+  padding-left: 2px;
+  padding-top: 10px;
+  letter-spacing: 2px;
+  font-weight: bold;
+  color: #000814;
 }
 
 @media only screen and (max-width: 500px) {
@@ -181,6 +229,30 @@ body {
   font-weight: bold;
 }
 
+#navigationContainerInside ul {
+  display: flex;
+  list-style: none;
+  margin-top: 60px;
+  margin-right: 30px;
+  color: #000814;
+  letter-spacing: 2px;
+  font-weight: bold;
+}
+
+#navigationContainer ul li a {
+  color: #f5cc00;
+  letter-spacing: 2px;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+#navigationContainerInside ul li a {
+  color: #000814;
+  letter-spacing: 2px;
+  font-weight: bold;
+  text-decoration: none;
+}
+
 @media only screen and (max-width: 500px) {
   #navigationContainer ul {
     display: none;
@@ -194,6 +266,11 @@ body {
 }
 
 #navigationContainer ul li {
+  padding-top: 10px;
+  margin-right: 40px;
+}
+
+#navigationContainerInside ul li {
   padding-top: 10px;
   margin-right: 40px;
 }
@@ -417,6 +494,7 @@ body {
   display: flex;
   justify-content: space-between;
   padding: 80px 0 0px 30px;
+  width: 100%;
 }
 
 .footerLogoSection {
@@ -488,6 +566,13 @@ body {
   font-family: Julius Sans One;
 }
 
+.copyright {
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+  font-size: 12px;
+}
+
 @media only screen and (max-width: 500px) {
   .footerLogoAbbr {
     font-size: 70px;
@@ -513,13 +598,13 @@ body {
   .footerLinksSection {
     display: flex;
     flex-direction: column;
-    margin: 0 50px;
+    margin: 0 80px;
   }
 
   .footerSubscribeSection {
     display: flex;
     flex-direction: column;
-    margin: 0 50px;
+    margin-right: 50px;
   }
 
   .subscribeText {
@@ -530,11 +615,190 @@ body {
     width: 50%;
     margin-top: 20px;
   }
+
+  .copyright {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    margin-left: 480px;
+    font-size: 12px;
+    text-align: center;
+  }
 }
 
-.copyright {
+.aboutUsContainer {
+  padding: 60px 30px 60px 30px;
   display: flex;
-  justify-content: center;
-  padding: 20px;
-  font-size: 12px;
+  flex-direction: column;
+  width: 1400px;
+}
+
+.aboutUsTitle {
+  font-size: 40px;
+  justify-content: space-around;
+}
+
+.aboutUsContent {
+  display: flex;
+}
+
+.truckerImg {
+  padding: 60px;
+}
+.truckerImg img {
+  height: 500px;
+}
+
+.truckerContent {
+  padding: 60px;
+  width: 100%;
+  line-height: 25px;
+  letter-spacing: 2px;
+}
+
+.serviceSections {
+  display: flex;
+  flex-direction: column;
+  padding: 30px;
+  justify-content: space-between;
+}
+
+.serviceSectionContent {
+  display: flex;
+  justify-content: space-between;
+  margin: 50px 0;
+  line-height: 20px;
+  letter-spacing: 1px;
+}
+
+.serviceSectionHeading {
+  font-size: 20px;
+  font-weight: bold;
+  padding-bottom: 40px;
+}
+
+.serviceSectionHeading2 {
+  font-size: 30px;
+  font-weight: bold;
+  padding: 60px 0;
+}
+
+.serviceSectionText {
+  font-size: 15px;
+  padding-right: 40px;
+  line-height: 25px !important;
+  letter-spacing: 1px;
+}
+
+.serviceImages img {
+  height: 300px;
+  padding-right: 40px;
+}
+
+.terminals {
+  display: flex;
+
+  justify-content: space-between;
+}
+
+.terminalSection {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 40px 0;
+}
+
+.terminalSectionHeading {
+  font-size: 20px;
+  font-weight: bold;
+  padding-bottom: 10px;
+}
+
+.terminalSectionText {
+  font-size: 15px;
+  padding-right: 40px;
+  letter-spacing: 1px;
+  line-height: 25px;
+  text-align: justify;
+}
+
+.terminalImages img {
+  height: 400px;
+  width: 100%;
+  padding-right: 40px;
+  padding-top: 15px;
+}
+
+.brandSection {
+  display: flex;
+  justify-content: space-between;
+  padding: 40px 0;
+}
+
+.brandSectionHeading {
+  font-size: 30px;
+  font-weight: bold;
+  padding: 50px 0 0 0;
+}
+
+.brandSectionImage img {
+  height: 400px;
+
+  padding-right: 40px;
+}
+
+.brandSectionText {
+  font-size: 15px;
+  padding-right: 40px;
+  letter-spacing: 1px;
+  line-height: 25px;
+}
+
+.brandSectionText ul {
+  padding-left: 15px;
+  padding-top: 30px;
+  line-height: 28px;
+}
+
+.contactSectionText {
+  font-size: 15px;
+  padding-right: 40px;
+  padding-top: 30px;
+  line-height: 25px !important;
+  letter-spacing: 1px;
+}
+
+.contactForm {
+  padding-top: 40px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.formFields {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+.formFields label {
+  font-size: 13px;
+  padding-bottom: 5px;
+}
+
+.formFields input {
+  width: 50%;
+  padding: 10px;
+}
+
+.formFields button {
+  width: 10%;
+  padding: 10px;
+  background-color: #000814;
+  color: #cca000;
+  font-family: Julius sans one;
+  font-weight: bold;
+  font-size: 18px;
+  border-radius: 5px;
 }

@@ -4,7 +4,7 @@ const StartedBy = () => {
   return (
     <div className="startedByContainer">
       <div className="startedByImg">
-        <img src="/images/startedBy.png" />
+        <img alt="image" src="/images/startedBy.png" />
       </div>
       <div className="startedByContent">
         <span className="startedByTitle">

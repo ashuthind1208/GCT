@@ -5,12 +5,14 @@ import Navigation from "./Navigation";
 
 const Header = () => {
   return (
-    <div className="heroBanner">
-      <div className="headerContainer">
-        <Logo />
-        <Navigation />
+    <div>
+      <div className="heroBanner">
+        <div className="headerContainer">
+          <Logo />
+          <Navigation />
+        </div>
+        <HeroBanner />
       </div>
-      <HeroBanner />
     </div>
   );
 };

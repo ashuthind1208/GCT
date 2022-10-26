@@ -1,21 +1,23 @@
 import "./App.css";
-import Header from "./components/Header";
-import ShippingNeeds from "./components/ShippingNeeds";
-import StartedBy from "./components/StartedBy";
-import TruckingByNumbers from "./components/TruckingByNumbers";
-import Footer from "./Footer";
+
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Home from "./pages/Home";
+import About from "./pages/About";
+import Services from "./pages/Services";
+import Contact from "./pages/Contact";
+import Thanks from "./pages/Thanks";
 
 function App() {
   return (
-    <div className="App">
-      <Header />
-      <main className="mainContainer">
-        <TruckingByNumbers />
-        <ShippingNeeds />
-        <StartedBy />
-        <Footer />
-      </main>
-    </div>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="about" element={<About />} />
+        <Route path="Services" element={<Services />} />
+        <Route path="Contact" element={<Contact />} />
+        <Route path="Thanks" element={<Thanks />} />
+      </Routes>
+    </BrowserRouter>
   );
 }
 

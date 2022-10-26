@@ -35,7 +35,7 @@ const ShippingNeeds = () => {
           </div>
         </div>
         <div className="shippingImg">
-          <img src="/images/shipping.png" />
+          <img alt="shipping needs" src="/images/shipping.png" />
         </div>
       </div>
     </>

@@ -1,10 +1,17 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
-const Logo = () => {
+const Logo = ({ page }) => {
   return (
-    <div className="logo">
-      <span className="logoAbbr">GCT</span>
-      <span className="logoFullName">GoldCoast Trucking</span>
+    <div className={page === "inside" ? "logoInside" : "logo"}>
+      <span className={page === "inside" ? "logoAbbrInside" : "logoAbbr"}>
+        <Link to="/">GCT</Link>
+      </span>
+      <span
+        className={page === "inside" ? "logoFullNameInside" : "logoFullName"}
+      >
+        Gold Coast Trucking
+      </span>
     </div>
   );
 };
