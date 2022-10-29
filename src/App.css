@@ -1,5 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Julius+Sans+One&family=Poppins:wght@200;300;400&family=Ubuntu:wght@300&display=swap");
-
+@import url("https://fonts.googleapis.com/css2?family=Barlow:wght@100;200;300;400;500;600&display=swap");
 * {
   box-sizing: border-box;
   margin: 0;
@@ -7,7 +6,7 @@
 }
 
 body {
-  font-family: Julius Sans One;
+  font-family: Barlow;
   display: flex;
   /* align-items: center; */
   justify-content: center;
@@ -253,6 +252,12 @@ hr {
   letter-spacing: 2px;
   font-weight: bold;
   text-decoration: none;
+  font-size: 18px;
+}
+
+#navigationContainer ul li a:hover {
+  top: -20px;
+  transition: top 0.5s ease-in-out;
 }
 
 #navigationContainerInside ul li a {
@@ -260,6 +265,11 @@ hr {
   letter-spacing: 2px;
   font-weight: bold;
   text-decoration: none;
+}
+
+#navigationContainerInside ul li a:hover {
+  top: -20px;
+  transition: top 0.5s ease-in-out;
 }
 
 @media only screen and (max-width: 500px) {
