@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
-const Navigation = ({ page }) => {
+const Navigation = ({ page, customstyle }) => {
   return (
     <div
       id={
@@ -10,14 +10,20 @@ const Navigation = ({ page }) => {
     >
       <ul>
         <li>
-          <Link to="/about">About</Link>
+          <Link to="/about" style={customstyle}>
+            About
+          </Link>
         </li>
         <li>
-          <Link to="/services">Services</Link>
+          <Link to="/services" style={customstyle}>
+            Services
+          </Link>
         </li>
-        <li>Careers</li>
+        <li style={customstyle}>Careers</li>
         <li>
-          <Link to="/contact">Contact</Link>
+          <Link to="/contact" style={customstyle}>
+            Contact
+          </Link>
         </li>
         <li className="navDriveUs">Drive with us</li>
       </ul>
