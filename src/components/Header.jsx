@@ -30,6 +30,7 @@ const Header = () => {
   };
 
   useEffect(() => {
+    window.scrollTo(0, 0);
     window.addEventListener("scroll", (e) => {
       listenScrollEvent(e);
     });

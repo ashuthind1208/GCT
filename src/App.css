@@ -521,6 +521,12 @@ hr {
   flex-direction: column;
 }
 
+.footerLogoSection .logoImg {
+  height: 120px;
+  width: 170px;
+  margin-right: 100px;
+}
+
 .footerLogoAbbr {
   font-size: 40px;
   font-weight: bold;

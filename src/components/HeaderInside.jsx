@@ -5,7 +5,7 @@ import { useState, useEffect } from "react";
 
 const HeaderInside = () => {
   const [custom, setCustom] = useState({
-    backgroundColor: "rgb(204,160,0,0.4)",
+    backgroundColor: "transparent",
   });
   const [navCustom, setNavCustom] = useState({});
   const [scrollPosition, setScrollPosition] = useState(0);
@@ -28,7 +28,7 @@ const HeaderInside = () => {
       setNavCustom({ color: "#f5cc00" });
     } else {
       setCustom({
-        backgroundColor: "rgb(204,160,0,0.4)",
+        backgroundColor: "transparent",
         transition:
           "height 0.5s ease-in-out, background-color 0.5s , opacity 0.5s ease-in, top 0.5s ease-out",
       });
@@ -37,6 +37,7 @@ const HeaderInside = () => {
   };
 
   useEffect(() => {
+    window.scrollTo(0, 0);
     handleScroll();
     window.addEventListener("scroll", (e) => {
       console.log(window.scrollY);

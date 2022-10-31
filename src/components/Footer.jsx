@@ -5,8 +5,7 @@ const Footer = () => {
     <>
       <div className="footerContainer">
         <div className="footerLogoSection">
-          <span className="footerLogoAbbr">GCT</span>
-          <span className="footerLogoFullName">Gold Coast Trucking</span>
+          <img src="/images/logo.png" className="logoImg" />
           <span className="footerAddress">
             1435 West Valley Hwy N
             <br />
